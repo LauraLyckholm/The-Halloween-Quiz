@@ -8,7 +8,7 @@ export const SummaryPage = () => {
   // Gets the response object from the store, and saves them in a variable named responses
   const responses = useQuizStore((state) => state.responses);
   // Gets the restart function from the store and saves it in a variable
-  const restartQuiz = useQuizStore.getState().restart;
+  const restartQuiz = useQuizStore((state) => state.restart);
   // Determine the response text based on the user's score
   const response = responses.find((response) => response.score === score);
 

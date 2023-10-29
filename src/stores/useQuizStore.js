@@ -192,7 +192,7 @@ export const useQuizStore = create((set) => ({
       currentQuestionIndex: 0,
       quizOver: false,
       score: 0,
-      responses: [],
+      responses: responses,
     });
   },
 }));
