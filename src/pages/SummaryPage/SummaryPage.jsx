@@ -25,7 +25,7 @@ export const SummaryPage = () => {
       <ButtonLink
         path="/" // or use 'to' for routing, e.g., "/question-page"
         onClick={restartQuiz}
-        ariaLabel="Restart the Quiz"
+        ariaLabel="Click to restart the quiz"
         label="Restart the Quiz"
       />
     </div>
